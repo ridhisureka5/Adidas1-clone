@@ -1,0 +1,38 @@
+.hello {
+    display: flex;
+    
+    align-items: center; /* Centers items horizontally */
+    justify-content: space-between; /* Centers items vertically */
+    padding: 10px; /* Optional: Adjust height */
+}
+.heading1{
+    text-align:left;
+    font-size: 50px;
+}
+.heading2 {
+    text-align: left;
+    font-size: 30px;
+    flex: 1; /* Equal width */
+    padding-top: 10px;
+
+}
+
+.heading3 {
+    text-align: left;
+    font-size: 30px;
+    flex: 1; /* Equal width */
+    padding-top: 10px;
+}
+
+.heading4 {
+    text-align: left;
+    font-size: 30px;
+    flex: 1; /* Equal width */
+    padding-top: 10px;
+}
+.heading5,.heading6{
+    text-align: left;
+    font-size: 30px;
+    flex: 1; /* Equal width */
+    padding-top: 10px;
+}

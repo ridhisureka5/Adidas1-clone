@@ -1,0 +1,120 @@
+.product-slider {
+    padding: 20px;
+  }
+  
+  /* Aligns the heading to the left */
+  .heading {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;  
+    margin-bottom: 10px;
+  }
+  
+  /* Aligns the buttons to the right */
+  .btns {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .btn {
+    background-color: white;
+    color: rgb(7, 6, 6);
+    padding: 10px 15px;
+    border: 2 px solid black;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Slider container */
+  .slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Scroll buttons */
+  .scroll-btn {
+    position: absolute;
+    top: 50%;  /* Center button vertically */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  .scroll-btn.left {
+    left: 0;
+  }
+  
+  .scroll-btn.right {
+    right: 0;
+  }
+  
+  .scroll-btn:hover {
+    background-color: black;
+  }
+  
+  /* Product list (Horizontal Scroll) */
+  .product-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    white-space: nowrap;
+  }
+  
+  /* Hide scrollbar */
+  .product-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Product card */
+  .product-card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Product image */
+  .product-image {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Product info (Name & Price on Image) */
+  .product-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  

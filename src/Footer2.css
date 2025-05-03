@@ -1,0 +1,30 @@
+.bottom-footer {
+    background-color: #1d1f23;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .bottom-links {
+    margin-bottom: 8px;
+  }
+  
+  .bottom-links span {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .bottom-links span:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    .bottom-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  

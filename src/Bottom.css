@@ -1,0 +1,73 @@
+.bottom-container {
+    padding: 40px 20px;
+    background-color: #0a0909;
+    color: #1a1a1a;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 550px;
+    border-top: 3px solid #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+  }
+  
+  .bottom-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fef7f7;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .bottom-container p {
+    padding-top: 50px;
+    padding-left: 350px;
+    padding-right: 350px;
+    
+    font-size: 15px;
+    color: #f8f0f0;
+    text-align: justify;
+    white-space: pre-line;
+  }
+  .bottom1-container {
+    background-color: #f9dc07; /* Adidas-style black */
+    color: #6620df;
+     display: flex;
+    padding: 30px 20px;
+    
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  .bottom1-container h3 {
+    padding:10px;
+  color: #090909;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 400px;
+    left: 50%;
+  }
+  .bottom1-container button {
+    background-color: rgb(15, 13, 13); 
+    color: white;
+    height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    right:50%;
+    border: 2px solid rgb(7, 0, 0);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+     visibility:visible;
+     
+  }
+  
+  .bottom1-container button:hover {
+    background-color: #333;
+  }
+  
