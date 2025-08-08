@@ -20,9 +20,19 @@ const AdidasChatbot = () => {
         'https://api.openai.com/v1/chat/completions',
         {
           model: "gpt-3.5-turbo",
-          messages: [{ role: "system", content: "You are a helpful Adidas shopping assistant." },
-                     { role: "user", content: input }],
-          temperature: 0.7
+          messages: [
+            {
+              role: "system",
+              content:
+                "You are an expert Adidas shopping assistant. Answer only questions related to Adidas products, stores, offers, and policies. If the user asks anything unrelated, politely inform them you only answer Adidas-related queries."
+            },
+            {
+              role: "user",
+              content: input
+            }
+          ],
+          temperature: 0.7,
+          max_tokens: 400
         },
         {
           headers: {
@@ -59,7 +69,7 @@ const AdidasChatbot = () => {
       <div className="chat-input">
         <input 
           type="text" 
-          placeholder="Ask something..." 
+          placeholder="Ask something about Adidas..." 
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSend()}
@@ -71,4 +81,3 @@ const AdidasChatbot = () => {
 };
 
 export default AdidasChatbot;
-
